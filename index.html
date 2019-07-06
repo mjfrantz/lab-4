@@ -18,11 +18,11 @@
     <script>
         // var email = prompt("What's your email");
         let grades = [50, 95, 75, 35, 55, 93, 100, 65];
-
+        var overall = 0;
         for (var i = 0; i < grades.length; i++) {
-            var avg = (grades[i] / grades.length) * grades.length
-        };
-
+            overall += grades[i];
+        }
+        var avg = overall / grades.length;
         console.log(avg);
         // const divMessage = document.getElementById('division');
         // // alert("Hello" + name);
